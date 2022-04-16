@@ -123,16 +123,15 @@ asyncio.get_event_loop().run_until_complete(main())
 
 <summary>Add it to Terra Station Wallet</summary>
 
-1. Click on the cogwheel in the top right corner of the extension\
-   &#x20;![](.gitbook/assets/image.png)
-2. Click on "Add a network >" and fill the fields like so:
-   * Name: A descriptive name (no incidence on the network)
-   * Chain ID: "columbus-5" for mainnet
-   * LCD: `https://:KEY@columbus.lcd.setten.io/PROJECT_ID`\
-     ``Be sure to replace KEY and PROJECT\_ID with the key and project id\
-     from the last step
+1. Click on the cogwheel in the top right corner of the extension
+2. Click on "Add a network >"
+3. Fill the fields like so:
 
-&#x20;<img src=".gitbook/assets/image (2).png" alt="" data-size="original">
+* **Name:** A descriptive name (no incidence on the network)
+* **Chain ID:** "columbus-5" for mainnet
+* **LCD:** `https://:KEY@columbus.lcd.setten.io/PROJECT_ID`\
+  ``Be sure to replace KEY and PROJECT\_ID with the key and project id\
+  you copied on the last step
 
 
 
