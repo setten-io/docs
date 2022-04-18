@@ -4,9 +4,9 @@
 
 ## Concepts
 
-* [Products and networks](concepts/products-and-networks.md)
 * [Authentication](concepts/authentication.md)
 * [Rate limiting and quotas](concepts/rate-limiting-and-quotas.md)
+* [Products and networks](concepts/products-and-networks.md)
 * [Plans](concepts/plans.md)
 
 ## Guides
