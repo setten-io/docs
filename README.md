@@ -90,53 +90,6 @@ asyncio.get_event_loop().run_until_complete(main())
 
 </details>
 
-### Dapp user
-
-<details>
-
-<summary>Create and account</summary>
-
-1. Log in with Github or register on our [app](https://app.setten.io/login).
-
-</details>
-
-<details>
-
-<summary>Create a new project</summary>
-
-1. On the [Projects](https://app.setten.io/projects) page, click on [Add project](https://app.setten.io/projects/create).
-2. Give it a descriptive name and click on "Create".
-3. You will get redirected back to the [Project](https://app.setten.io/projects) page and should see your new project.
-
-</details>
-
-<details>
-
-<summary>Get your project id and key</summary>
-
-1. Click on the "Manage" button on your new project.
-2. Copy the "Project ID" and "Key" fields.
-
-</details>
-
-<details>
-
-<summary>Add it to Terra Station Wallet</summary>
-
-1. Click on the cogwheel in the top right corner of the extension
-2. Click on "Add a network >"
-3. Fill the fields like so:
-
-* **Name:** A descriptive name (no incidence on the network)
-* **Chain ID:** "columbus-5" for mainnet
-* **LCD:** `https://:KEY@columbus.lcd.setten.io/PROJECT_ID`\
-  ``Be sure to replace KEY and PROJECT\_ID with the key and project id\
-  you copied on the last step
-
-
-
-</details>
-
 ## Guides
 
 Not sure where to start? Check out our guide to set your project on foot:
