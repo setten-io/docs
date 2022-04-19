@@ -18,6 +18,10 @@ Please note that both burst rate-limiting and quotas apply to each account globa
 If a project is getting rate-limited from sending too many requests, it will affect all the other projects under the same account.
 {% endhint %}
 
+{% hint style="info" %}
+When blocked by our burst rate-limiting, it will return a `retry-after` header. It contains the number of seconds left before being unblocked.
+{% endhint %}
+
 Burst rate-limiting ensures there aren't too many requests coming at once from a single user in a few seconds.
 
 ### Quotas - long time frame
