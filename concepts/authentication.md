@@ -7,7 +7,7 @@ description: Authentication for Setten projects
 Each of your projects has its endpoint and key for authentication. This design gives the user a granular approach to security. If necessary, it is effortless to remove or cycle a project key without affecting other projects.
 
 {% hint style="info" %}
-If you are searching for a way to authenticate in a client that only accepts an URL, like Terra Station for example, please see [Basic auth](authentication.md#3.-basic-auth)
+If you are searching for a way to authenticate in a client that only accepts an URL, like Terrain for example, please see [Basic auth](authentication.md#3.-basic-auth)
 {% endhint %}
 
 ## Authentication process
