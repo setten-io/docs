@@ -15,5 +15,5 @@
 
 ## Links
 
-* [Community](https://github.com/setten-io/discussion/discussions)
+* [Community](https://github.com/orgs/setten-io/discussions)
 * [Stake with us](https://finder.terra.money/mainnet/validator/terravaloper1tdkh85vv7vsvav93elmx6qsywuu22amc60u3sa)
