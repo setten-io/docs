@@ -4,12 +4,12 @@ description: Plans and pricing
 
 # Plans
 
-|                     | FREE PLAN           |
-| ------------------- | ------------------- |
-| Quota               | 300,000 req/month\* |
-| Burst rate-limiting | 50 req/min\*        |
-| Products            | All                 |
-| Networks            | All                 |
-| Support             | Community           |
+|                     | FREE PLAN     |
+| ------------------- | ------------- |
+| Quota               | ∞ req/month\* |
+| Burst rate-limiting | 100 req/10s\* |
+| Products            | All           |
+| Networks            | All           |
+| Support             | Community     |
 
-\*Subject to change before full launch
+\*Only during beta launch phase/subject to change
