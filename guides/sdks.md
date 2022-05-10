@@ -61,16 +61,5 @@ asyncio.get_event_loop().run_until_complete(main())
 {% hint style="info" %}
 Terra.py synchronous `LCDClient` does not support custom headers or query strings yet.
 
-We recommend using basic auth for the time being as shown in this example and described in [Authentication](https://docs.setten.io/concepts/authentication#3.-basic-auth).
+We recommend using the [async ](sdks.md#async)client until we solve this with the TFL team.
 {% endhint %}
-
-```python
-from terra_sdk.client.lcd import LCDClient
-
-SETTEN_PROJECT = "37677fb03e7d426e8ecfd56f36655577"
-SETTEN_KEY = "4e4a6106c6354339a263d23090559804"
-
-terra = LCDClient(f"https://:{SETTEN_KEY}@bombay.lcd.setten.io/{SETTEN_PROJECT}")
-total_supply = await terra.bank.total()
-print(total_supply)
-```
