@@ -24,7 +24,7 @@ Those are the locations we'll check for your project key in order. Only the firs
 
 #### 1. Header
 
-A header named `X-Setten-Key`.
+Using the standard `Authorization: Bearer` header
 
 {% tabs %}
 {% tab title="curl" %}
@@ -32,8 +32,8 @@ A header named `X-Setten-Key`.
 PROJECT="37677fb03e7d426e8ecfd56f36655577"
 KEY="4e4a6106c6354339a263d23090559804"
 
-curl https://bombay.lcd.setten.io/${PROJECT}/node_info \
-     -H "X-Setten-Key: ${KEY}"
+curl https://lcd.pisco.terra.setten.io/${PROJECT}/node_info \
+     -H "Authorization: Bearer ${KEY}"
 ```
 {% endtab %}
 
@@ -42,18 +42,18 @@ curl https://bombay.lcd.setten.io/${PROJECT}/node_info \
 import requests
 
 project_id = "37677fb03e7d426e8ecfd56f36655577"
-headers = {"X-Setten-Key": "4e4a6106c6354339a263d23090559804"}
+headers = {"Authorization": "Bearer 4e4a6106c6354339a263d23090559804"}
 
-requests.get(f"https://bombay.lcd.setten.io/{project_id}/node_info", headers=headers )
+requests.get(f"https://lcd.pisco.terra.setten.io/{project_id}/node_info", headers=headers )
 ```
 {% endtab %}
 
 {% tab title="javascript" %}
 ```javascript
 const projectId = "37677fb03e7d426e8ecfd56f36655577"
-const headers = {"X-Setten-Key": "4e4a6106c6354339a263d23090559804"}
+const headers = {"Authorization": "Bearer 4e4a6106c6354339a263d23090559804"}
 
-fetch(`https://bombay.lcd.setten.io/${projectId}/node_info`, { headers })
+fetch(`https://lcd.pisco.terra.setten.io/${projectId}/node_info`, { headers })
 ```
 {% endtab %}
 {% endtabs %}
@@ -68,7 +68,7 @@ A query string named `key`.
 PROJECT="37677fb03e7d426e8ecfd56f36655577"
 KEY="4e4a6106c6354339a263d23090559804"
 
-curl https://bombay.lcd.setten.io/${PROJECT}/node_info?key=${KEY}
+curl https://lcd.pisco.terra.setten.io/${PROJECT}/node_info?key=${KEY}
 ```
 {% endtab %}
 
@@ -88,48 +88,7 @@ requests.get(f"https://bombay.lcd.setten.io/{project_id}/node_info?key={key}")
 const projectId = "37677fb03e7d426e8ecfd56f36655577"
 const key = "4e4a6106c6354339a263d23090559804"
 
-fetch(`https://bombay.lcd.setten.io/${projectId}/node_info?key=${key}`)
-```
-{% endtab %}
-{% endtabs %}
-
-#### 3. Basic auth
-
-Basic auth with no username and the project key as the password.
-
-{% hint style="warning" %}
-**If you are querying the API from code, you probably should use one of the two first techniques.**
-
-Basic auth is only sound when using a client that only accepts an URL and doesn't offer the possibility to inject headers or query strings
-{% endhint %}
-
-{% tabs %}
-{% tab title="curl" %}
-```bash
-PROJECT="37677fb03e7d426e8ecfd56f36655577"
-KEY="4e4a6106c6354339a263d23090559804"
-
-curl https://:${KEY}@bombay.lcd.setten.io/${PROJECT}/node_info
-```
-{% endtab %}
-
-{% tab title="python 3" %}
-```python
-import requests
-
-project_id = "37677fb03e7d426e8ecfd56f36655577"
-key = "4e4a6106c6354339a263d23090559804"
-
-requests.get(f"https://:{key}@bombay.lcd.setten.io/{project_id}/node_info")
-```
-{% endtab %}
-
-{% tab title="javascript" %}
-```javascript
-const projectId = "37677fb03e7d426e8ecfd56f36655577"
-const key = "4e4a6106c6354339a263d23090559804"
-
-fetch(`https://:${key}@bombay.lcd.setten.io/${projectId}/node_info`)
+fetch(`https://lcd.pisco.terra.setten.io/${projectId}/node_info?key=${key}`)
 ```
 {% endtab %}
 {% endtabs %}

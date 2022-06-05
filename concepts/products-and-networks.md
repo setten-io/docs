@@ -18,4 +18,4 @@ If you can't find a product you'd like to use on this page, you can check on the
 All our plans (free plan included) have access to all the available networks.
 {% endhint %}
 
-<table><thead><tr><th>Network</th><th data-type="select">Type</th><th>Chain ID</th><th data-type="select" data-multiple>Products</th></tr></thead><tbody><tr><td>Bombay</td><td></td><td><code>bombay-12</code></td><td></td></tr></tbody></table>
+<table><thead><tr><th>Network</th><th data-type="select">Type</th><th>Chain ID</th><th data-type="select" data-multiple>Products</th></tr></thead><tbody><tr><td>Pisco</td><td></td><td><code>pisco-1</code></td><td></td></tr><tr><td>Phoenix</td><td></td><td><code>phoenix-1</code></td><td></td></tr></tbody></table>

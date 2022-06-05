@@ -32,7 +32,7 @@ You can request and vote for features, give feedback, and receive community supp
 
 1. On the [Projects](https://app.setten.io/projects) page, click on [Add project](https://app.setten.io/projects/create).
 2. Give it a descriptive name and click on "Create".
-3. You will get redirected back to the [Project](https://app.setten.io/projects) page and should see your new project.
+3. You will be redirected to your new project page.
 
 </details>
 
@@ -40,8 +40,7 @@ You can request and vote for features, give feedback, and receive community supp
 
 <summary>Get your project id and key</summary>
 
-1. Click on the "Manage" button on your new project.
-2. Copy the "Project ID" and "Key" fields.
+1. In the "Access" section, copy the "Project ID" and "Key" fields.
 
 </details>
 
@@ -56,11 +55,11 @@ import { LCDClient } from '@terra-money/terra.js';
 const settenProject = "37677fb03e7d426e8ecfd56f36655577"
 const settenKey = "4e4a6106c6354339a263d23090559804"
 
-// connect to bombay testnet
+// connect to pisco testnet
 const terra = new LCDClient({
-  URL: `https://:${settenKey}@bombay.lcd.setten.io/${settenProject}`,
-  chainID: 'bombay-12',
-});no
+  URL: `https://lcd.pisco.terra.setten.io/${settenProject}?key=${settenKey}`,
+  chainID: 'pisco-1',
+});
 
 // ...
 ```
@@ -77,10 +76,8 @@ SETTEN_KEY = "4e4a6106c6354339a263d23090559804"
 
 
 async def main():
-    terra = AsyncLCDClient(f"https://bombay.lcd.setten.io/{SETTEN_PROJECT}", "bombay-12")
-    terra.session.headers.add("X-Setten-Key", SETTEN_KEY)
-    total_supply = await terra.bank.total()
-    print(total_supply)
+    terra = AsyncLCDClient(f"https://lcd.pisco.terra.setten.io/{SETTEN_PROJECT}", "pisco-1")
+    terra.session.headers.add("Authorization", f"Bearer {SETTEN_KEY}")
     # ...
     await terra.session.close()
 
