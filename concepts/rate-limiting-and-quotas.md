@@ -27,11 +27,9 @@ Burst rate-limiting ensures there aren't too many requests coming at once from a
 ### Quotas - long time frame
 
 {% hint style="info" %}
-All the responses from our endpoints contain custom headers with quota information.
+All the responses from our endpoints contain a custom header with quota information.
 
-`X-Setten-Quota`: Account total quota for the current billing period.
-
-`X-Setten-Remaining`: Remaining requests for the current billing period.
+`X-Quota-Remaining`: Remaining requests for the current billing period.
 {% endhint %}
 
 Quotas regulate users' API consumption over a more extended period (usually in days/weeks/months).
